@@ -49,25 +49,27 @@ The calculator is intentionally a **lead-screening estimator**, not a quotation 
 
 ## Deployment
 
-This repository is designed for GitHub Pages. A Pages workflow is included under `.github/workflows/pages.yml`.
+This repository is ready for simple GitHub Pages branch deployment and does not require a build step.
 
-If Pages has not been enabled for this repository yet:
+To publish it for the first time:
 
-1. Open **Settings → Pages** in GitHub.
-2. Under **Build and deployment**, select **GitHub Actions**.
-3. Run the Pages workflow, or push a new commit to `main`.
+1. Open **Settings → Pages** in this repository.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select branch **main** and folder **/(root)**.
+4. Click **Save**.
 
-Expected project URL after GitHub Pages activation:
+After GitHub finishes publishing, the expected URL is:
 
 `https://shukritobi.github.io/tenaga-solar-power-ev/`
+
+Every later update pushed to `main` will be reflected by GitHub Pages automatically.
 
 ## Files
 
 - `index.html` — content, semantic structure, metadata and conversion flow
 - `styles.css` — responsive design system and layouts
 - `script.js` — calculator, mobile navigation, WhatsApp links and lead form
-- `.github/workflows/pages.yml` — GitHub Pages deployment
 
 ## Recommended next production pass
 
-Before moving this concept to the client's primary domain, replace any remotely referenced media with approved original project files from Fazrul / Tenaga Solar, confirm the final corporate wording and certifications, connect analytics, and point the live domain to the deployed site.
+Before moving the site to the client's primary domain, replace any remotely referenced media with approved original project files from Fazrul / Tenaga Solar, confirm the final corporate wording and certifications, connect analytics, and point the live domain to the deployed site.
