@@ -1,1 +1,324 @@
-<placeholder>
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FazSolar | Solar & EV Consultant Malaysia</title>
+  <meta name="description" content="Semak potensi solar rumah atau bisnes bersama Fazrul Ruslan. Konsultasi solar, Solar ATAP, battery storage dan EV charging dengan pengalaman Tenaga Solar Jaya Maju.">
+  <meta name="theme-color" content="#083d2f">
+  <meta property="og:title" content="FazSolar | Solar & EV Consultant">
+  <meta property="og:description" content="Semak bil, saiz sistem dan potensi penjimatan solar. Konsultasi percuma bersama Fazrul Ruslan.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Fazrul Ruslan",
+    "jobTitle":"Solar Consultant",
+    "telephone":"+60122844359",
+    "email":"fazrul.ruslan@tenagasolar.com",
+    "url":"https://www.tenagasolar.com",
+    "worksFor":{"@type":"Organization","name":"Tenaga Solar Jaya Maju Sdn Bhd","url":"https://www.tenagasolar.com"}
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="FazSolar home">
+      <span class="brand-mark"><img src="assets/solar-mark.png" alt=""></span>
+      <span><strong>FazSolar</strong><small>Solar & EV Consultant</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="#calculator">Semak Bil</a>
+      <a href="#services">Servis</a>
+      <a href="#projects">Projek</a>
+      <a href="#powerup">PowerUp EV</a>
+      <a href="#contact" class="nav-cta">Konsultasi Percuma</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse-dot"></span> Solar ATAP 2026 • Residential • Commercial • EV</div>
+          <h1>Bil elektrik tinggi?<br><span>Jom kira solar yang betul.</span></h1>
+          <p class="lead">Saya Fazrul, Solar Consultant. Hantar bil elektrik anda dan saya bantu semak saiz sistem, potensi penjimatan, pilihan battery dan proses Solar ATAP tanpa jargon teknikal.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#calculator">Semak bil sekarang</a>
+            <a class="btn btn-secondary wa-link" data-message="Hi Fazrul, saya nak buat free solar consultation. Boleh bantu semak bil saya?">WhatsApp Fazrul ↗</a>
+          </div>
+          <div class="hero-proof">
+            <div><strong>1,258+</strong><span>projek berjaya*</span></div>
+            <div><strong>24.34 MW</strong><span>PV dipasang*</span></div>
+            <div><strong>14+ tahun</strong><span>akar pengalaman industri*</span></div>
+          </div>
+          <p class="micro">*Rekod korporat Tenaga Solar Jaya Maju yang diterbitkan pada laman dan profil syarikat.</p>
+        </div>
+
+        <div class="hero-panel" aria-label="Solar consultation preview">
+          <div class="sun-orbit"></div>
+          <div class="panel-top">
+            <span>FREE BILL CHECK</span>
+            <span class="status">● Available</span>
+          </div>
+          <div class="bill-card">
+            <small>Contoh kes terbaru</small>
+            <h2>RM478 <span>→ ±RM31</span></h2>
+            <p>anggaran bil bulanan selepas sistem dicadangkan</p>
+            <div class="system-row">
+              <div><b>7.98 kWp</b><span>Solar PV</span></div>
+              <div><b>16 kWh</b><span>Battery</span></div>
+              <div><b>5–6 thn</b><span>Est. ROI</span></div>
+            </div>
+          </div>
+          <div class="photo-stack">
+            <img src="assets/rawang-site.webp" alt="Solar site survey in Rawang">
+            <img src="assets/rawang-roof.webp" alt="Roof surveyed for solar installation">
+            <img src="assets/rawang-install.webp" alt="Solar installation work">
+          </div>
+          <div class="panel-note"><b>Rawang site assessment</b><span>Anggaran daripada perkongsian FazSolar. Hasil sebenar bergantung pada penggunaan, bumbung, tarif dan reka bentuk akhir.</span></div>
+        </div>
+      </div>
+      <div class="trust-strip">
+        <span>Backed by</span>
+        <b>TENAGA SOLAR JAYA MAJU</b>
+        <i></i>
+        <span>MPSEA Full Member • EPC Contractor</span>
+        <i></i>
+        <span>Energy Efficiency • Solar • EV</span>
+      </div>
+    </section>
+
+    <section id="calculator" class="section calculator-section">
+      <div class="section-head">
+        <p class="kicker">60-second solar check</p>
+        <h2>Berapa solar yang mungkin sesuai untuk anda?</h2>
+        <p>Masukkan anggaran bil bulanan. Ini hanyalah saringan awal sebelum Fazrul semak profil penggunaan dan tapak.</p>
+      </div>
+
+      <div class="calculator-card">
+        <div class="calc-input">
+          <label for="bill">Bil elektrik bulanan</label>
+          <div class="bill-input-wrap"><span>RM</span><input id="bill" type="number" min="50" max="50000" step="10" value="500"></div>
+          <input id="billRange" type="range" min="50" max="3000" step="10" value="500">
+          <div class="range-labels"><span>RM50</span><span>RM3,000+</span></div>
+          <div class="property-choice" role="group" aria-label="Jenis premis">
+            <button class="choice active" data-type="home">Rumah</button>
+            <button class="choice" data-type="business">Bisnes</button>
+          </div>
+        </div>
+
+        <div class="calc-results">
+          <div class="result-main">
+            <span>Saiz sistem indikatif</span>
+            <strong id="systemSize">8.3 kWp</strong>
+            <small>anggaran kasar untuk screening awal</small>
+          </div>
+          <div class="result-grid">
+            <div><span>Potensi offset bil</span><b id="offset">RM300–RM450/bln</b></div>
+            <div><span>Potensi setahun</span><b id="annual">RM3,600–RM5,400</b></div>
+          </div>
+          <div class="calc-disclaimer">Bukan quotation. Saiz sebenar bergantung pada load profile, shading, ruang bumbung, TNB/Sarawak Energy requirements, Solar ATAP dan sama ada battery diperlukan.</div>
+          <a class="btn btn-primary btn-wide" id="calcWhatsapp">Hantar result ini ke Fazrul ↗</a>
+        </div>
+      </div>
+
+      <div class="atap-banner">
+        <div>
+          <span class="atag">UPDATED 2026</span>
+          <h3>Solar ATAP kini menggantikan NEM untuk permohonan baharu di Semenanjung.</h3>
+          <p>Program Solar ATAP bermula 1 Januari 2026 dan membenarkan penggunaan solar sendiri serta eksport lebihan tenaga ke grid tertakluk kepada garis panduan dan kelulusan teknikal.</p>
+        </div>
+        <a href="https://www.seda.gov.my/reportal/atap/" target="_blank" rel="noopener">Rujuk SEDA ↗</a>
+      </div>
+    </section>
+
+    <section id="services" class="section services-section">
+      <div class="section-head split">
+        <div>
+          <p class="kicker">One-stop green energy</p>
+          <h2>Dari bil elektrik sampai sistem hidup.</h2>
+        </div>
+        <p>Fokus laman ini bukan sekadar “jual panel”. Ia bantu anda faham apa yang masuk akal untuk rumah atau operasi anda sebelum commit.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card featured">
+          <span class="service-no">01</span>
+          <h3>Residential Solar</h3>
+          <p>Semakan bil, roof suitability, system sizing, Solar ATAP pathway, installation dan monitoring.</p>
+          <ul><li>Free bill screening</li><li>Site survey</li><li>PV + optional battery</li></ul>
+        </article>
+        <article class="service-card">
+          <span class="service-no">02</span>
+          <h3>Commercial & Industrial</h3>
+          <p>Solar EPCC dan energy-cost strategy untuk pejabat, kilang, gudang dan premis komersial.</p>
+          <ul><li>Load profiling</li><li>ROI / savings proposal</li><li>Grid integration</li></ul>
+        </article>
+        <article class="service-card">
+          <span class="service-no">03</span>
+          <h3>Battery & Energy Efficiency</h3>
+          <p>Battery storage, energy audit dan langkah efficiency untuk tingkatkan self-consumption dan resilience.</p>
+          <ul><li>Battery sizing</li><li>Energy audit</li><li>Optimisation</li></ul>
+        </article>
+        <article class="service-card ev-card">
+          <span class="service-no">04</span>
+          <h3>EV Charging</h3>
+          <p>EV charger infrastructure dan PowerUp, aplikasi charging companion untuk cari charger dan pantau sesi.</p>
+          <ul><li>Home / business EV charging</li><li>Charger infrastructure</li><li>PowerUp app</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section case-section">
+      <div class="case-grid">
+        <div class="case-visual">
+          <img src="assets/rawang-roof.webp" alt="Rawang rooftop solar survey">
+          <div class="case-badge"><span>RAWANG</span><b>7.98 kWp + 16 kWh</b></div>
+        </div>
+        <div class="case-copy">
+          <p class="kicker">From site visit to numbers</p>
+          <h2>Contoh bagaimana Fazrul terangkan solar dengan angka yang pelanggan boleh faham.</h2>
+          <p>Dalam perkongsian FazSolar, satu rumah di Rawang dengan bil sekitar RM478 sebulan dinilai untuk sistem 7.98 kWp bersama 16 kWh battery storage.</p>
+          <div class="case-stats">
+            <div><strong>~RM447</strong><span>anggaran jimat / bulan</span></div>
+            <div><strong>~RM5,365</strong><span>anggaran jimat / tahun</span></div>
+            <div><strong>5–6 tahun</strong><span>anggaran ROI</span></div>
+          </div>
+          <p class="micro">Angka di atas ialah anggaran yang dikongsi untuk kes tersebut, bukan jaminan bagi setiap premis.</p>
+          <a class="text-link wa-link" data-message="Hi Fazrul, saya nampak case Rawang. Saya nak semak rumah saya juga. Boleh saya hantar bil elektrik?">Saya nak semak rumah saya →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="section-head split">
+        <div>
+          <p class="kicker">Track record</p>
+          <h2>Projek daripada portfolio Tenaga Solar.</h2>
+        </div>
+        <p>Daripada rumah hingga fasiliti komersial dan institusi berskala MW.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project project-a"><span>Commercial • EPCC</span><h3>Lock & Key Hardware</h3><b>275.26 kWp</b></article>
+        <article class="project project-b"><span>Commercial • EPCC</span><h3>Asiaric Contract</h3><b>93.55 kWp</b></article>
+        <article class="project project-c"><span>Commercial • EPCC</span><h3>Dalex Engineering</h3><b>70.2 kWp</b></article>
+        <article class="project project-d"><span>Institution • Supply & Install</span><h3>Universiti Putra Malaysia</h3><b>2,263 kWp</b></article>
+        <article class="project project-e"><span>Institution • Supply & Install</span><h3>UiTM Kepala Batas</h3><b>600 kWp</b></article>
+        <article class="project project-f"><span>Residential</span><h3>Adinazrin</h3><b>11.55 kWp</b></article>
+      </div>
+      <a class="text-link external" href="https://www.tenagasolar.com/projects/" target="_blank" rel="noopener">Lihat portfolio korporat penuh ↗</a>
+    </section>
+
+    <section id="powerup" class="section ev-section">
+      <div class="ev-wrap">
+        <div class="ev-copy">
+          <p class="kicker light">PowerUp by Tenaga EV</p>
+          <h2>Solar untuk rumah. Charging untuk perjalanan.</h2>
+          <p>PowerUp ialah aplikasi EV charging companion oleh Tenaga Solar Jaya Maju. Ia membantu pengguna mencari charging station, melihat status charger dan mengurus sesi charging dari telefon.</p>
+          <div class="store-buttons">
+            <a href="https://play.google.com/store/apps/details?id=com.ev_tenaga.com" target="_blank" rel="noopener"><span>GET IT ON</span><b>Google Play</b></a>
+            <a href="https://apps.apple.com/my/app/powerup-ev-malaysia/id6757514422" target="_blank" rel="noopener"><span>DOWNLOAD ON THE</span><b>App Store</b></a>
+          </div>
+          <a class="ev-contact wa-link" data-message="Hi Fazrul, saya nak tahu lebih lanjut pasal EV charger / PowerUp untuk rumah atau premis saya.">Tanya tentang EV charger →</a>
+        </div>
+        <div class="ev-visual">
+          <img class="powerup-logo" src="assets/powerup.png" alt="PowerUp by Tenaga EV">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="app-head"><b>PowerUp</b><span>● Live</span></div>
+            <div class="map">
+              <div class="road r1"></div><div class="road r2"></div><div class="road r3"></div>
+              <i class="pin p1">⚡</i><i class="pin p2">⚡</i><i class="pin p3">⚡</i>
+            </div>
+            <div class="charger-card"><span>Nearest charger</span><b>DC Fast Charger</b><small>Available • 2.4 km</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="section-head">
+        <p class="kicker">Simple process</p>
+        <h2>Tak perlu tahu solar dulu. Mulakan dengan bil.</h2>
+      </div>
+      <div class="steps">
+        <div><span>01</span><h3>Hantar bil</h3><p>WhatsApp bil elektrik terkini dan jenis premis.</p></div>
+        <div><span>02</span><h3>Semak & survey</h3><p>Fazrul semak penggunaan, roof/site dan objektif anda.</p></div>
+        <div><span>03</span><h3>Proposal</h3><p>Dapat cadangan saiz, komponen, savings dan pilihan battery.</p></div>
+        <div><span>04</span><h3>Install & apply</h3><p>Pasukan urus pemasangan, testing, commissioning dan proses berkaitan grid.</p></div>
+      </div>
+    </section>
+
+    <section class="section credentials-section">
+      <div class="credentials-wrap">
+        <div>
+          <p class="kicker">Company credibility</p>
+          <h2>Consultant yang disokong oleh organisasi solar sebenar.</h2>
+          <p>Tenaga Solar Jaya Maju ditubuhkan pada 2020 dengan akar pengalaman industri sejak 2011. Profil korporat menyenaraikan solar residential, C&I, installation, maintenance dan energy efficiency.</p>
+        </div>
+        <div class="cred-pills">
+          <span>MPSEA Full Member</span>
+          <span>EPC Contractor</span>
+          <span>Energy Services Company (ESCO)</span>
+          <span>CIDB Registered</span>
+          <span>Residential & C&I Solar</span>
+          <span>Solar + Battery + EV</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="section-head"><p class="kicker">FAQ</p><h2>Soalan biasa sebelum pasang solar.</h2></div>
+      <div class="faq">
+        <details open><summary>Apa yang Fazrul perlukan untuk mula?</summary><p>Bil elektrik terkini, lokasi premis dan beberapa gambar bumbung jika ada. Daripada situ, screening awal boleh dibuat sebelum site survey.</p></details>
+        <details><summary>Apa itu Solar ATAP?</summary><p>Solar ATAP ialah program consumer solar yang bermula 1 Januari 2026 di Semenanjung Malaysia. Ia meneruskan konsep self-consumption dan membenarkan lebihan tenaga dieksport ke grid dengan mekanisme kredit tertakluk kepada garis panduan semasa.</p></details>
+        <details><summary>Perlu battery ke?</summary><p>Tidak semestinya. Battery lebih sesuai bila ada objektif backup, penggunaan malam yang tinggi, atau strategi self-consumption tertentu. Fazrul boleh bandingkan scenario dengan dan tanpa battery.</p></details>
+        <details><summary>Boleh buat untuk kilang atau pejabat?</summary><p>Ya. Tenaga Solar mempunyai rekod projek commercial dan industrial, termasuk projek skala ratusan kWp hingga MW.</p></details>
+        <details><summary>Boleh pasang EV charger sekali?</summary><p>Boleh dinilai sebagai sebahagian daripada energy plan premis. Tenaga EV juga mempunyai aplikasi PowerUp untuk pengalaman EV charging.</p></details>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card">
+        <div>
+          <p class="kicker light">Free consultation</p>
+          <h2>Hantar satu bil. Dapat gambaran yang lebih jelas.</h2>
+          <p>Tak perlu commit apa-apa. Mulakan dengan semakan bil dan keperluan anda.</p>
+          <div class="contact-actions">
+            <a class="btn btn-white wa-link" data-message="Hi Fazrul, saya nak buat free consultation solar. Ini bil elektrik saya.">WhatsApp +6012 284 4359 ↗</a>
+            <a class="contact-email" href="mailto:fazrul.ruslan@tenagasolar.com">fazrul.ruslan@tenagasolar.com</a>
+          </div>
+        </div>
+        <form id="leadForm">
+          <label>Nama<input id="leadName" placeholder="Nama anda" required></label>
+          <label>Bil bulanan (RM)<input id="leadBill" type="number" placeholder="Contoh: 480" required></label>
+          <label>Lokasi<input id="leadLocation" placeholder="Contoh: Rawang, Selangor" required></label>
+          <label>Jenis premis<select id="leadType"><option>Rumah</option><option>Kedai / Office</option><option>Kilang / Warehouse</option><option>Lain-lain</option></select></label>
+          <button class="btn btn-dark" type="submit">Hantar melalui WhatsApp ↗</button>
+        </form>
+      </div>
+      <div class="contact-meta">
+        <div><b>Fazrul Ruslan</b><span>Solar Consultant</span></div>
+        <div><b>Tenaga Solar Jaya Maju</b><span>Kuala Lumpur • Johor • Sarawak</span></div>
+        <div><b>Web</b><a href="https://www.tenagasolar.com" target="_blank" rel="noopener">tenagasolar.com ↗</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark"><img src="assets/solar-mark.png" alt=""></span><span><strong>FazSolar</strong><small>Solar & EV Consultant</small></span></a>
+    <p>Independent consultant landing page concept using publicly available company information and supplied contact materials.</p>
+    <div><a href="https://www.tenagasolar.com" target="_blank" rel="noopener">Tenaga Solar</a><a href="https://www.seda.gov.my/reportal/atap/" target="_blank" rel="noopener">Solar ATAP</a><a href="https://play.google.com/store/apps/details?id=com.ev_tenaga.com" target="_blank" rel="noopener">PowerUp</a></div>
+  </footer>
+
+  <a class="floating-wa wa-link" aria-label="WhatsApp Fazrul" data-message="Hi Fazrul, saya nak tanya tentang solar.">WA</a>
+  <script src="script.js"></script>
+</body>
+</html>
